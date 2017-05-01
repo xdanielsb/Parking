@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
   resources :people
 =begin
-    get "/people/"
-    post "/people/"
-    delete "/people/"
-    get "/person/:id"
-    patch "/person/:id"
-    put "/person/:id"
+    get "/people/" index
+    post "/people/" create
+    delete "/people/:id" destroy
+    get "/people/:id" show
+    get "/people/new" new
+    get "/people/:id/edit" edit
+    patch "/people/:id" update
+    put "/people/:id" update
 =end
   root "welcome#index"
 

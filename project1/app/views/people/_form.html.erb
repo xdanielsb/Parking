@@ -1,0 +1,24 @@
+<%= form_for(@person) do |f| %>
+  <% @person.errors.full_messages.each do |message| %>
+    <div>
+       <li> <%= message%> </li>
+    </div>
+  <% end %>
+  <div class="field">
+      <%= f.text_field :cedula, placeholder: "Cedula" %>
+  </div>
+  <div class="field">
+       <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <div class="field">
+      <%= f.text_field :age, placeholder: "Age" %>
+  </div>
+  <div class="field">
+      <%= f.text_area :description, placeholder: "Description", style: "width:300px; height:100px" %>
+  </div>
+
+  <div class="field">
+    <%= f.submit "Save Person"  %>
+  </div>
+
+<% end %>

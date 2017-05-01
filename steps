@@ -1,8 +1,0 @@
-#Create a project in rails
-rails new name_project
-
-#Start the server in rails
-rails server
-
-#Create a controller with a method 
-rails generate controller name_controller name_method

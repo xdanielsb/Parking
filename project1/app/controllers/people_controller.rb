@@ -21,10 +21,14 @@ class PeopleController < ApplicationController
     @person  = Person.new(cedula: params[:person][:cedula], name: params[:person][:name], age:params[:person][:age], description: params[:person][:description])
 
     #Save in the database
-    @person.save
+    if @person.save
+      #Display the save register
+      redirect_to  @person
+    else
+      #open the view of new
+      render :new
+    end
 
-    #Display the save register
-    redirect_to  @person
   end
 
 end

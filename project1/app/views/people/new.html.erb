@@ -1,5 +1,10 @@
 <h1>Crear Persona</h1>
 <%= form_for(@person) do |f| %>
+  <% @person.errors.full_messages.each do |message| %>
+    <div>
+       <li> <%= message%> </li>
+    </div>
+  <% end %>
   <div class="field">
       <%= f.text_field :cedula, placeholder: "Cedula" %>
   </div>

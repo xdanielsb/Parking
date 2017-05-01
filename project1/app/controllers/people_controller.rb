@@ -31,14 +31,18 @@ class PeopleController < ApplicationController
 
   end
 
-  def update
-
-  end
-
   def destroy
     @person  = Person.find(params[:id])
     @person.destroy
     redirect_to people_path
   end
 
+
+    def update
+
+    end
+
+    def edit
+      @person = Person.find(params[:id])
+    end
 end

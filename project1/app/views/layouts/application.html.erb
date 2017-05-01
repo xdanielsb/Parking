@@ -8,7 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+    <nav>
+     <li>
+       <%= link_to "Inicio", root_path%>
+       <a href="">Content</a>
+       <a href="">About</a>
+       <a href="">Hell yeah!</a>
+     </li>
+    </nav>
     <%= yield %>
   </body>
 </html>

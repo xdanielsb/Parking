@@ -1,3 +1,6 @@
 p {
   color: rgb(50, 66, 145)
 }
+a:visited{
+  color:inherit;
+}

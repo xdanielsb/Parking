@@ -1,7 +1,8 @@
+# Parking system in Rails project & OAuth
 
-# Rails project
+## Basic configuration to create the models and migrations in the project
 
-- Create a project in rails
+- Create a project
  - rails new name_project
 - Start the server in rails
  - rails server
